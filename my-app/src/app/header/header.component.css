@@ -1,0 +1,11 @@
+#head{
+    background-color: teal;
+    height: 50px;
+}
+
+p{
+    color:beige;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}

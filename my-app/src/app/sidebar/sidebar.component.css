@@ -1,0 +1,26 @@
+#sidebar{
+    position: absolute;
+    background-color: wheat;
+    height: 800px;
+    width: 40%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding-top: 90px;
+    padding-left: 90px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+a:hover{
+    background-color: gray;
+    font-size: 50px;
+}

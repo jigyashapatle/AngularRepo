@@ -1,0 +1,13 @@
+#foot{
+    position: absolute;
+    bottom: 0px;
+    background-color: teal;
+    height: 80px;
+    width: 100%;
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
