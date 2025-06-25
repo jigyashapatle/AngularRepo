@@ -1,0 +1,50 @@
+<div>
+  <table border="4">
+    <tr>
+      <th>EmpId</th>
+      <th>EmpName</th>
+      <th>Emp Salary</th>
+    </tr>
+
+    <tr *ngFor="let e of emp">
+      <div *ngIf="e.name=='Arun';then cond1"></div>
+      <ng-template #cond1>
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.salary}}</td>
+      </ng-template>
+    </tr>
+  </table>
+
+   <ul *ngFor="let e1 of emp">
+    <div *ngIf="e1.name=='Karthik';then cond1"></div>
+    <ng-template #cond1>
+      <li>{{e1.id}} {{e1.name}} {{e1.salary}}</li>
+    </ng-template>
+  </ul>
+
+  <div *ngIf="name=='pravee';then cond1; else cond2"></div>
+    <ng-template #cond1>Valid User</ng-template>
+    <ng-template #cond2>Invalid User</ng-template>
+
+  
+  <ul *ngFor="let e of emp" [ngSwitch]="e.id">
+     <li *ngSwitchCase="101">{{e.name}} {{e.salary}}</li>
+     <li *ngSwitchCase="102">{{e.name}} {{e.salary}}</li>
+     <li *ngSwitchCase="103">{{e.name}} {{e.salary}}</li>
+     <li *ngSwitchDefault>Value Is Not Present</li>
+  </ul>
+
+  <ul *ngFor="let e of emp" (click)="func(e)">
+    <li>{{e.id}}</li>
+  </ul>
+
+  <table border="4">
+    <tr><th>ID</th><th>Name</th><th>Salary</th></tr>
+    <tr *ngFor="let e of emp" click="func(e)">
+      <td>{{e.id}}</td>
+      <td>{{e.name}}</td>
+      <td>{{e.salary}}</td>
+    </tr>
+  </table>
+</div>
