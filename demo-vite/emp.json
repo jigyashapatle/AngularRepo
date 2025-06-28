@@ -1,0 +1,64 @@
+{
+  "emp": [
+    {
+      "id": "101",
+      "name": "Karthik",
+      "salary": 56000
+    },
+    {
+      "id": "102",
+      "name": "Vijay",
+      "salary": 58000
+    },
+    {
+      "id": "103",
+      "name": "Lokesh",
+      "salary": 60000
+    },
+    {
+      "id": "104",
+      "name": "Raj",
+      "salary": 62000
+    },
+    {
+      "id": "105",
+      "name": "Samuel",
+      "salary": 64000
+    },
+    {
+      "id": "106",
+      "name": "Mohit",
+      "salary": 67000
+    },
+    {
+      "id": "107",
+      "name": "Vivek",
+      "salary": "77000"
+    },
+    {
+      "id": 0,
+      "name": "",
+      "salary": 0
+    },
+    {
+      "id": 0,
+      "name": "",
+      "salary": 0
+    },
+    {
+      "id": 0,
+      "name": "",
+      "salary": 0
+    },
+    {
+      "id": 0,
+      "name": "",
+      "salary": 0
+    },
+    {
+      "id": 0,
+      "name": "",
+      "salary": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<form [formGroup]="empForm" (ngSubmit)="func()">
+  Enter emp ID : <input type="text" name="id" formControlName="id" required/><br/>
+  Enter Emp Name : <input type="text" name="name" formControlName="name"/><br/>
+
+  Enter Emp Salary : <input type="text" name="salary" formControlName="salary"/><br/>
+  <button type="submit">Click me</button>
+</form>
+
+<button (click)="getAll()">Select All</button>
+<table border="4">
+  <tr><th>EmpId</th><th>Empname</th><th>EmpSalary</th></tr>
+  <tr *ngFor="let e of data"><td>{{e.id}}</td><td>{{e.name}}</td><td>{{e.salary}}</td></tr>
+</table>
