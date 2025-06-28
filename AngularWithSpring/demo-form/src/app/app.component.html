@@ -1,0 +1,10 @@
+<form #myform="ngForm" (ngSubmit)="saveData()">
+  <!-- {{myform.value|json}}<br/>
+  {{userModel|json}}<br/> -->
+  Enter username : <input type="text" required #name [(ngModel)]="userModel.user"/><br/>
+  {{name.className}}<br/>
+  Enter password : <input type="text" name="pass" [(ngModel)]="userModel.pass"/><br/>
+  Select : <input type="checkbox" name="gender" [(ngModel)]="userModel.gender"/>Male<br/>
+  <input type="checkbox" name="gender" [(ngModel)]="userModel.gender"/>Female<br/>
+  <button type="submit">Click me</button>
+</form>
