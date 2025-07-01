@@ -1,0 +1,8 @@
+h1{
+    border: 1px solid red;
+}
+
+/* this css file's property will be applied (if same tags are there in both files) to UI because it is written at last in angular.json file*/
+/* body{
+    background-color: gray;
+} */
